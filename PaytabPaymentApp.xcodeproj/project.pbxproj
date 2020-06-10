@@ -1,0 +1,659 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AD213AD5F4650B6674160344 /* Pods_PaytabPaymentApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17ED4B5B273D9BEBED5F926B /* Pods_PaytabPaymentApp.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		B160A0D72491265A0088218D /* UIApplication+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B160A0D52491265A0088218D /* UIApplication+Extension.swift */; };
+		B160A0D82491265A0088218D /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B160A0D62491265A0088218D /* UIViewController+Extensions.swift */; };
+		B160A0DA249126750088218D /* ValidationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B160A0D9249126750088218D /* ValidationModel.swift */; };
+		B160A0DD249126990088218D /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B160A0DB249126990088218D /* DataStore.swift */; };
+		B160A0DE249126990088218D /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B160A0DC249126990088218D /* Repository.swift */; };
+		B160A0E2249126B00088218D /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B160A0DF249126B00088218D /* Coordinator.swift */; };
+		B160A0E3249126B00088218D /* CheckoutCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B160A0E0249126B00088218D /* CheckoutCoordinator.swift */; };
+		B160A0E4249126B00088218D /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B160A0E1249126B00088218D /* AppCoordinator.swift */; };
+		B160A0E6249126BC0088218D /* CheckoutInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B160A0E5249126BC0088218D /* CheckoutInfo.swift */; };
+		B160A0EB249126E20088218D /* PaymentSucessController.m in Sources */ = {isa = PBXBuildFile; fileRef = B160A0EA249126E20088218D /* PaymentSucessController.m */; };
+		B160A0EE249126EA0088218D /* CheckoutViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B160A0EC249126EA0088218D /* CheckoutViewModel.swift */; };
+		B160A0EF249126EA0088218D /* CheckoutController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B160A0ED249126EA0088218D /* CheckoutController.swift */; };
+		B160A0F22491275E0088218D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B160A0F12491275E0088218D /* Main.storyboard */; };
+		DABFD1C1248BD8F300551238 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABFD1C0248BD8F300551238 /* AppDelegate.swift */; };
+		DABFD1C3248BD8F300551238 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABFD1C2248BD8F300551238 /* SceneDelegate.swift */; };
+		DABFD1CA248BD8F600551238 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DABFD1C9248BD8F600551238 /* Assets.xcassets */; };
+		DABFD1CD248BD8F600551238 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DABFD1CB248BD8F600551238 /* LaunchScreen.storyboard */; };
+		DABFD1FE248CEE7200551238 /* MerchantInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = DABFD1FD248CEE7200551238 /* MerchantInfo.plist */; };
+		DACD82FD248FCAE400DBDAF2 /* Resources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = DACD82FB248FCAE400DBDAF2 /* Resources.bundle */; };
+		DACD82FE248FCAE400DBDAF2 /* paytabs-iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DACD82FC248FCAE400DBDAF2 /* paytabs-iOS.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		17ED4B5B273D9BEBED5F926B /* Pods_PaytabPaymentApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PaytabPaymentApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		39B8BDF835296B38A3041C46 /* Pods-PaytabPaymentApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PaytabPaymentApp.release.xcconfig"; path = "Target Support Files/Pods-PaytabPaymentApp/Pods-PaytabPaymentApp.release.xcconfig"; sourceTree = "<group>"; };
+		B160A0D52491265A0088218D /* UIApplication+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extension.swift"; sourceTree = "<group>"; };
+		B160A0D62491265A0088218D /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
+		B160A0D9249126750088218D /* ValidationModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValidationModel.swift; sourceTree = "<group>"; };
+		B160A0DB249126990088218D /* DataStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
+		B160A0DC249126990088218D /* Repository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		B160A0DF249126B00088218D /* Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		B160A0E0249126B00088218D /* CheckoutCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckoutCoordinator.swift; sourceTree = "<group>"; };
+		B160A0E1249126B00088218D /* AppCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		B160A0E5249126BC0088218D /* CheckoutInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckoutInfo.swift; sourceTree = "<group>"; };
+		B160A0E9249126E20088218D /* PaymentSucessController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaymentSucessController.h; sourceTree = "<group>"; };
+		B160A0EA249126E20088218D /* PaymentSucessController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaymentSucessController.m; sourceTree = "<group>"; };
+		B160A0EC249126EA0088218D /* CheckoutViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckoutViewModel.swift; sourceTree = "<group>"; };
+		B160A0ED249126EA0088218D /* CheckoutController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckoutController.swift; sourceTree = "<group>"; };
+		B160A0F12491275E0088218D /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		DABFD1BD248BD8F300551238 /* PaytabPaymentApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PaytabPaymentApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DABFD1C0248BD8F300551238 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DABFD1C2248BD8F300551238 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		DABFD1C9248BD8F600551238 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DABFD1CC248BD8F600551238 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DABFD1CE248BD8F600551238 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DABFD1DA248BD99E00551238 /* PaytabPaymentApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PaytabPaymentApp-Bridging-Header.h"; sourceTree = "<group>"; };
+		DABFD1FD248CEE7200551238 /* MerchantInfo.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = MerchantInfo.plist; sourceTree = "<group>"; };
+		DACD82FB248FCAE400DBDAF2 /* Resources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Resources.bundle; sourceTree = "<group>"; };
+		DACD82FC248FCAE400DBDAF2 /* paytabs-iOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = "paytabs-iOS.framework"; sourceTree = "<group>"; };
+		E83F5D25595D2E4358324F2A /* Pods-PaytabPaymentApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PaytabPaymentApp.debug.xcconfig"; path = "Target Support Files/Pods-PaytabPaymentApp/Pods-PaytabPaymentApp.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DABFD1BA248BD8F300551238 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD213AD5F4650B6674160344 /* Pods_PaytabPaymentApp.framework in Frameworks */,
+				DACD82FE248FCAE400DBDAF2 /* paytabs-iOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		06593C38FD187354EC4A01B1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				17ED4B5B273D9BEBED5F926B /* Pods_PaytabPaymentApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		17A6E542E9C3380FF890A8F3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E83F5D25595D2E4358324F2A /* Pods-PaytabPaymentApp.debug.xcconfig */,
+				39B8BDF835296B38A3041C46 /* Pods-PaytabPaymentApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B160A0C82491259F0088218D /* AppUtil */ = {
+			isa = PBXGroup;
+			children = (
+				B160A0D9249126750088218D /* ValidationModel.swift */,
+				B160A0D2249126350088218D /* Extensions */,
+			);
+			path = AppUtil;
+			sourceTree = "<group>";
+		};
+		B160A0CA249125B40088218D /* AppDataHandler */ = {
+			isa = PBXGroup;
+			children = (
+				B160A0DB249126990088218D /* DataStore.swift */,
+				B160A0DC249126990088218D /* Repository.swift */,
+			);
+			path = AppDataHandler;
+			sourceTree = "<group>";
+		};
+		B160A0CD249125DC0088218D /* AdditionalFrameWorks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = AdditionalFrameWorks;
+			sourceTree = "<group>";
+		};
+		B160A0CE249125E50088218D /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				B160A0E1249126B00088218D /* AppCoordinator.swift */,
+				B160A0E0249126B00088218D /* CheckoutCoordinator.swift */,
+				B160A0DF249126B00088218D /* Coordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		B160A0D0249125FF0088218D /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				B160A0E8249126D70088218D /* Success */,
+				B160A0E7249126CD0088218D /* Checkout */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		B160A0D2249126350088218D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B160A0D52491265A0088218D /* UIApplication+Extension.swift */,
+				B160A0D62491265A0088218D /* UIViewController+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		B160A0E7249126CD0088218D /* Checkout */ = {
+			isa = PBXGroup;
+			children = (
+				B160A0F02491271D0088218D /* ViewModel */,
+				B160A0ED249126EA0088218D /* CheckoutController.swift */,
+			);
+			path = Checkout;
+			sourceTree = "<group>";
+		};
+		B160A0E8249126D70088218D /* Success */ = {
+			isa = PBXGroup;
+			children = (
+				B160A0E9249126E20088218D /* PaymentSucessController.h */,
+				B160A0EA249126E20088218D /* PaymentSucessController.m */,
+			);
+			path = Success;
+			sourceTree = "<group>";
+		};
+		B160A0F02491271D0088218D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B160A0EC249126EA0088218D /* CheckoutViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		DABFD1B4248BD8F300551238 = {
+			isa = PBXGroup;
+			children = (
+				DABFD1BF248BD8F300551238 /* PaytabPaymentApp */,
+				DABFD1DE248BD9B500551238 /* Resources */,
+				DABFD1BE248BD8F300551238 /* Products */,
+				17A6E542E9C3380FF890A8F3 /* Pods */,
+				06593C38FD187354EC4A01B1 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		DABFD1BE248BD8F300551238 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DABFD1BD248BD8F300551238 /* PaytabPaymentApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DABFD1BF248BD8F300551238 /* PaytabPaymentApp */ = {
+			isa = PBXGroup;
+			children = (
+				B160A0D0249125FF0088218D /* Scenes */,
+				B160A0CE249125E50088218D /* Coordinator */,
+				B160A0CD249125DC0088218D /* AdditionalFrameWorks */,
+				B160A0CA249125B40088218D /* AppDataHandler */,
+				B160A0C82491259F0088218D /* AppUtil */,
+				DABFD1C0248BD8F300551238 /* AppDelegate.swift */,
+				DABFD1C2248BD8F300551238 /* SceneDelegate.swift */,
+				DABFD1E6248BDBBC00551238 /* Model */,
+				DABFD1C9248BD8F600551238 /* Assets.xcassets */,
+				DABFD1CB248BD8F600551238 /* LaunchScreen.storyboard */,
+				B160A0F12491275E0088218D /* Main.storyboard */,
+				DABFD1CE248BD8F600551238 /* Info.plist */,
+				DABFD1FD248CEE7200551238 /* MerchantInfo.plist */,
+				DABFD1DA248BD99E00551238 /* PaytabPaymentApp-Bridging-Header.h */,
+			);
+			path = PaytabPaymentApp;
+			sourceTree = "<group>";
+		};
+		DABFD1DE248BD9B500551238 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DACD82FC248FCAE400DBDAF2 /* paytabs-iOS.framework */,
+				DACD82FB248FCAE400DBDAF2 /* Resources.bundle */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		DABFD1E6248BDBBC00551238 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B160A0E5249126BC0088218D /* CheckoutInfo.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DABFD1BC248BD8F300551238 /* PaytabPaymentApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DABFD1D1248BD8F600551238 /* Build configuration list for PBXNativeTarget "PaytabPaymentApp" */;
+			buildPhases = (
+				EE9181B6282247EED567B11D /* [CP] Check Pods Manifest.lock */,
+				DABFD1B9248BD8F300551238 /* Sources */,
+				DABFD1BA248BD8F300551238 /* Frameworks */,
+				DABFD1BB248BD8F300551238 /* Resources */,
+				DF5C8F458AF2D09402450D8D /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PaytabPaymentApp;
+			productName = PaytabPaymentApp;
+			productReference = DABFD1BD248BD8F300551238 /* PaytabPaymentApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DABFD1B5248BD8F300551238 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = Subramani;
+				TargetAttributes = {
+					DABFD1BC248BD8F300551238 = {
+						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1130;
+					};
+				};
+			};
+			buildConfigurationList = DABFD1B8248BD8F300551238 /* Build configuration list for PBXProject "PaytabPaymentApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DABFD1B4248BD8F300551238;
+			productRefGroup = DABFD1BE248BD8F300551238 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DABFD1BC248BD8F300551238 /* PaytabPaymentApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DABFD1BB248BD8F300551238 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DACD82FD248FCAE400DBDAF2 /* Resources.bundle in Resources */,
+				B160A0F22491275E0088218D /* Main.storyboard in Resources */,
+				DABFD1FE248CEE7200551238 /* MerchantInfo.plist in Resources */,
+				DABFD1CD248BD8F600551238 /* LaunchScreen.storyboard in Resources */,
+				DABFD1CA248BD8F600551238 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		DF5C8F458AF2D09402450D8D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PaytabPaymentApp/Pods-PaytabPaymentApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PaytabPaymentApp/Pods-PaytabPaymentApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PaytabPaymentApp/Pods-PaytabPaymentApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EE9181B6282247EED567B11D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PaytabPaymentApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DABFD1B9248BD8F300551238 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B160A0EB249126E20088218D /* PaymentSucessController.m in Sources */,
+				B160A0E3249126B00088218D /* CheckoutCoordinator.swift in Sources */,
+				B160A0E6249126BC0088218D /* CheckoutInfo.swift in Sources */,
+				B160A0EF249126EA0088218D /* CheckoutController.swift in Sources */,
+				B160A0DA249126750088218D /* ValidationModel.swift in Sources */,
+				DABFD1C1248BD8F300551238 /* AppDelegate.swift in Sources */,
+				DABFD1C3248BD8F300551238 /* SceneDelegate.swift in Sources */,
+				B160A0E2249126B00088218D /* Coordinator.swift in Sources */,
+				B160A0D82491265A0088218D /* UIViewController+Extensions.swift in Sources */,
+				B160A0DE249126990088218D /* Repository.swift in Sources */,
+				B160A0E4249126B00088218D /* AppCoordinator.swift in Sources */,
+				B160A0DD249126990088218D /* DataStore.swift in Sources */,
+				B160A0EE249126EA0088218D /* CheckoutViewModel.swift in Sources */,
+				B160A0D72491265A0088218D /* UIApplication+Extension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DABFD1CB248BD8F600551238 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DABFD1CC248BD8F600551238 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DABFD1CF248BD8F600551238 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DABFD1D0248BD8F600551238 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DABFD1D2248BD8F600551238 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E83F5D25595D2E4358324F2A /* Pods-PaytabPaymentApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VS69383GKM;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Resources",
+				);
+				INFOPLIST_FILE = PaytabPaymentApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Resources",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"AFNetworking\"",
+					"-framework",
+					"\"BIObjCHelpers\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"IQKeyboardManager\"",
+					"-framework",
+					"\"Lockbox\"",
+					"-framework",
+					"\"MBProgressHUD\"",
+					"-framework",
+					"\"Mantle\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"PINCache\"",
+					"-framework",
+					"\"PayCardsRecognizer\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"Reachability\"",
+					"-framework",
+					"\"SBJson\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"UIKit\"",
+					"-weak_framework",
+					"\"UIKit\"",
+					"-all_load",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.PaytabPaymentApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "PaytabPaymentApp/PaytabPaymentApp-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "arm64 arm64e armv7 armv7s armv6";
+			};
+			name = Debug;
+		};
+		DABFD1D3248BD8F600551238 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 39B8BDF835296B38A3041C46 /* Pods-PaytabPaymentApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VS69383GKM;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Resources",
+				);
+				INFOPLIST_FILE = PaytabPaymentApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Resources",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"AFNetworking\"",
+					"-framework",
+					"\"ActionSheetPicker_3_0\"",
+					"-framework",
+					"\"BIObjCHelpers\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"IQKeyboardManager\"",
+					"-framework",
+					"\"Lockbox\"",
+					"-framework",
+					"\"MBProgressHUD\"",
+					"-framework",
+					"\"Mantle\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"PINCache\"",
+					"-framework",
+					"\"PayCardsRecognizer\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"Reachability\"",
+					"-framework",
+					"\"SBJson\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"UIKit\"",
+					"-weak_framework",
+					"\"UIKit\"",
+					"-all_load",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.PaytabPaymentApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "PaytabPaymentApp/PaytabPaymentApp-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "arm64 arm64e armv7 armv7s armv6";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DABFD1B8248BD8F300551238 /* Build configuration list for PBXProject "PaytabPaymentApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DABFD1CF248BD8F600551238 /* Debug */,
+				DABFD1D0248BD8F600551238 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DABFD1D1248BD8F600551238 /* Build configuration list for PBXNativeTarget "PaytabPaymentApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DABFD1D2248BD8F600551238 /* Debug */,
+				DABFD1D3248BD8F600551238 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DABFD1B5248BD8F300551238 /* Project object */;
+}
