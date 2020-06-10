@@ -25,7 +25,6 @@
 		DABFD1C3248BD8F300551238 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABFD1C2248BD8F300551238 /* SceneDelegate.swift */; };
 		DABFD1CA248BD8F600551238 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DABFD1C9248BD8F600551238 /* Assets.xcassets */; };
 		DABFD1CD248BD8F600551238 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DABFD1CB248BD8F600551238 /* LaunchScreen.storyboard */; };
-		DABFD1FE248CEE7200551238 /* MerchantInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = DABFD1FD248CEE7200551238 /* MerchantInfo.plist */; };
 		DACD82FD248FCAE400DBDAF2 /* Resources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = DACD82FB248FCAE400DBDAF2 /* Resources.bundle */; };
 		DACD82FE248FCAE400DBDAF2 /* paytabs-iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DACD82FC248FCAE400DBDAF2 /* paytabs-iOS.framework */; };
 /* End PBXBuildFile section */
@@ -54,7 +53,6 @@
 		DABFD1CC248BD8F600551238 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DABFD1CE248BD8F600551238 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DABFD1DA248BD99E00551238 /* PaytabPaymentApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PaytabPaymentApp-Bridging-Header.h"; sourceTree = "<group>"; };
-		DABFD1FD248CEE7200551238 /* MerchantInfo.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = MerchantInfo.plist; sourceTree = "<group>"; };
 		DACD82FB248FCAE400DBDAF2 /* Resources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Resources.bundle; sourceTree = "<group>"; };
 		DACD82FC248FCAE400DBDAF2 /* paytabs-iOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = "paytabs-iOS.framework"; sourceTree = "<group>"; };
 		E83F5D25595D2E4358324F2A /* Pods-PaytabPaymentApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PaytabPaymentApp.debug.xcconfig"; path = "Target Support Files/Pods-PaytabPaymentApp/Pods-PaytabPaymentApp.debug.xcconfig"; sourceTree = "<group>"; };
@@ -203,7 +201,6 @@
 				DABFD1CB248BD8F600551238 /* LaunchScreen.storyboard */,
 				B160A0F12491275E0088218D /* Main.storyboard */,
 				DABFD1CE248BD8F600551238 /* Info.plist */,
-				DABFD1FD248CEE7200551238 /* MerchantInfo.plist */,
 				DABFD1DA248BD99E00551238 /* PaytabPaymentApp-Bridging-Header.h */,
 			);
 			path = PaytabPaymentApp;
@@ -289,7 +286,6 @@
 			files = (
 				DACD82FD248FCAE400DBDAF2 /* Resources.bundle in Resources */,
 				B160A0F22491275E0088218D /* Main.storyboard in Resources */,
-				DABFD1FE248CEE7200551238 /* MerchantInfo.plist in Resources */,
 				DABFD1CD248BD8F600551238 /* LaunchScreen.storyboard in Resources */,
 				DABFD1CA248BD8F600551238 /* Assets.xcassets in Resources */,
 			);
@@ -550,7 +546,7 @@
 					"\"UIKit\"",
 					"-all_load",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.test.PaytabPaymentApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vijay.PaytabPaymentApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "PaytabPaymentApp/PaytabPaymentApp-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -623,7 +619,7 @@
 					"\"UIKit\"",
 					"-all_load",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.test.PaytabPaymentApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vijay.PaytabPaymentApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "PaytabPaymentApp/PaytabPaymentApp-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;

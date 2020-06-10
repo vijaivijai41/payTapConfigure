@@ -5,7 +5,7 @@ target 'PaytabPaymentApp' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 
-  # Pods for PaytabPaymentApp
+  
 
   pod 'BIObjCHelpers'
   pod 'IQKeyboardManager'
@@ -20,6 +20,15 @@ target 'PaytabPaymentApp' do
 
   # In case if you are using OCR version 
   pod 'PayCardsRecognizer'
+  
+  target 'PaytabPaymentAppTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
 
-
+  target 'PaytabPaymentAppUITests' do
+    # Pods for testing
+  end
+  
 end
+
